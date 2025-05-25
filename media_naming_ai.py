@@ -140,7 +140,7 @@ def call_grok(prompt, api_key=None, model="grok-3"):
     # Using OpenAI client for Grok API call as per provided template
     if openai is None:
         raise ImportError("openai 库未安装。请运行 pip install openai")
-    api_key = api_key or "xai-ew92NXieWDPNM31CxB9i9zjnR88qowQ0O3dOwIBaGv7fvah4WcJMeO8fW9d7sUZeetz6xgry2FyB25eD"
+    api_key = api_key #enter your own API key
     try:
         client = openai.OpenAI(api_key=api_key, base_url="https://api.x.ai/v1")
         completion = client.chat.completions.create(
